@@ -41,7 +41,7 @@ project-root/
 ## Funcionalidades Principais
 
 1. **User**
-   - Cadastrar, vilualizar e fazer login
+   - Cadastrar, visualizar e fazer login
 
 ## Configuração do Ambiente
 
