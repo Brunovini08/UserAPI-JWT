@@ -49,9 +49,10 @@ project-root/
    - Certifique-se de ter o .NET SDK instalado na sua máquina.
 
 2. **Configurações do Banco de Dados:**
-   - Configure a string de conexão com o banco de dados MySQL no arquivo `.env`. Exemplo:
+   - Configure a string de conexão com o banco de dados MySQL e a KEY usada na criação do token no arquivo `.env`. Exemplo:
    ```
    CONNECTION_STRING=MinhaStringDeConexaoDoBancoDeDados
+   KEY=MinhaStringKey
    ```
 3. **Executando a Aplicação**
    - Execute a aplicação usando o comando:
