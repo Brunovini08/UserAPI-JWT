@@ -16,7 +16,15 @@ public class TokenService
          new Claim("userName", user.UserName),
          new Claim(ClaimTypes.DateOfBirth, user.BirthDate.ToString())
       };
-      var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("OFISJDFOSIDFJ029348DFSKFJDSLKJF090FDSJ"));
+
+      string? keyEnv = Environment.GetEnvironmentVariable("KEY");
+      
+      if (string.IsNullOrEmpty(keyEnv))
+      {
+         throw new ApplicationException("The Environment variable is not defined");
+      }
+      
+      var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyEnv));
 
       var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
