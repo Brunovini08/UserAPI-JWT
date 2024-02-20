@@ -4,7 +4,7 @@
 
 Esta é uma API de usuários desenvolvida em c# utilizando o framework ASP.NET Core, Entity Framework Core para interação com o banco
 de dados MySQL. O projeto segue os princípios SOLID para garantir uma arquitetura robusta e escalável. AutoMapper é usado para
-mapeamento de entidades e DTOs.
+mapeamento de entidades e DTOs. O projeto é voltado para a segurança e entendimento do JWT, a lib JWT é utlizado para gerar tokens que são validados para o acesso do usuário em áreas restritas e assim manter a segurança do sistema.
 =======
 
 # API de Filmes em C#/.NET com Camada de Serviço
